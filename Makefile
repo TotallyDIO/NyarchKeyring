@@ -1,8 +1,11 @@
 V = $(shell git describe --abbrev=0)
-# do smth to make this work LOL
+# Do smth to make this work LOL
+# Below is for Website/GPG key
 FILE_PREFIX = nyarch
+# NO idea what below does
 PREFIX = /usr/local
-DEFAULT_KEY = 3056513887B78AEB
+# Below is set to TotallyDIO
+DEFAULT_KEY = 861A4F44ACF49447
 
 install:
 	install -dm755 $(DESTDIR)$(PREFIX)/share/pacman/keyrings/
@@ -16,7 +19,7 @@ dist:
 	gpg --default-key ${DEFAULT_KEY} --detach-sign --use-agent ${FILE_PREFIX}-keyring-$(V).tar.gz
 
 upload:
-	rsync --chmod 644 --progress ${FILE_PREFIX}-keyring-$(V).tar.gz ${FILE_PREFIX}-keyring-$(V).tar.gz.sig ${FILE_PREFIX}.org:/nginx/var/www/keyring/
-
+	rsync --chmod 644 --progress ${FILE_PREFIX}-keyring-$(V).tar.gz ${FILE_PREFIX}-keyring-$(V).tar.gz.sig ${FILE_PREFIX}linux.moe:/nginx/var/www/keyring/
+#																			^makes signature														^add smth here?
 .PHONY: install uninstall dist upload
 
