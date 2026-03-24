@@ -7,6 +7,8 @@
 
 # nyarch.gpg status:
 TotallyDIO: 1st and done
+Francesco: needed
+anybody else
 
 
 # Notes
