@@ -1,5 +1,6 @@
 V = $(shell git describe --abbrev=0)
 # do smth to make this work LOL
+#git push to make sure i can push to the right branch
 FILE_PREFIX = nyarch
 PREFIX = /usr/local
 DEFAULT_KEY = 3056513887B78AEB
