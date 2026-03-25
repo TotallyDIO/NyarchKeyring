@@ -20,6 +20,6 @@ dist:
 
 upload:
 	rsync --chmod 644 --progress ${FILE_PREFIX}-keyring-$(V).tar.gz ${FILE_PREFIX}-keyring-$(V).tar.gz.sig ${FILE_PREFIX}linux.moe:/nginx/var/www/keyring/
-#																			^makes signature														^add smth here?
+#																			^makes signature										^figure this out lol
 .PHONY: install uninstall dist upload
 

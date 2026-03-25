@@ -6,9 +6,9 @@
 3. anything else that i forgor here
 
 # nyarch.gpg status:
-    TotallyDIO: 1st and done
-    Francesco: needed
-    anybody else
+1. TotallyDIO: 1st and done
+2. Francesco: needed
+3. anybody else
 
 
 # Notes
