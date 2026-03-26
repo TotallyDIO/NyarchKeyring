@@ -1,9 +1,8 @@
 # Keyring for the Nyarch Repo mainainers
 
 # To-Do
-1. edit Makefile to pull correctly
+1. edit Makefile to pull correctly (get silver to help here?)
 2. get other maintainers public keys
-3. anything else that i forgor here
 
 # nyarch.gpg status:
 1. TotallyDIO: 1st and done
@@ -12,7 +11,7 @@
 
 
 # Notes
-/packager-revoked: idk
+/packager-revoked: takes away bad packagers.
 nyarch-revoked: lists bad people
 master-keyids: "master keys"
 Makefile: makes the pkg

@@ -1,10 +1,9 @@
 V = $(shell git describe --abbrev=0)
-# Do smth to make this work LOL
-# Below is for Website/GPG key
+# below grabs the nyarch.gpg and puts it in the keyrings (ln 11, 14, 17, 18, 21)
 FILE_PREFIX = nyarch
-# NO idea what below does
+# Below is close to the dir where the keyring is (ln 10, 11, 14, 15)
 PREFIX = /usr/local
-# Below is set to TotallyDIO
+# Below is set to TotallyDIO, seems not to be used here.
 DEFAULT_KEY = 861A4F44ACF49447
 
 install:
